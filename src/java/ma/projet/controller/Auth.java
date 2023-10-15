@@ -17,10 +17,7 @@ import ma.projet.entity.Client;
 import ma.projet.service.ClientService;
 import ma.projet.util.Utils;
 
-/**
- *
- * @author Lachgar
- */
+
 @WebServlet(name = "Auth", urlPatterns = {"/auth"})
 public class Auth extends HttpServlet {
 
