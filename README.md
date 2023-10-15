@@ -3,7 +3,7 @@
 ## Screenshots
 
 #### Authentification 
-![Authentification](./assets/auth.png)
+![Authentification](./web/assets/auth.png)
 
 #### Inscription
 ![Inscription](./web/assets/inscription.png)
