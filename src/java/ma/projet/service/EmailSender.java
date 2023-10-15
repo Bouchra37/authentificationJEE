@@ -11,10 +11,7 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import static ma.projet.service.SendMailTLS.username;
-/**
- *
- * @author G(
- */
+
 public class EmailSender {
 
     static final String username = "ennahhalbouchra@gmail.com";
@@ -72,9 +69,9 @@ public class EmailSender {
             message.setFrom(new InternetAddress(username));
             message.setRecipients(
                     Message.RecipientType.TO, InternetAddress.parse(email));
-            message.setSubject("Confirmation code");
+            message.setSubject("Confirmation du code");
 
-            String msg = "Your confirmation code is : " + s;
+            String msg = "Votre code de confirmation est : " + s;
 
             MimeBodyPart mimeBodyPart = new MimeBodyPart();
             mimeBodyPart.setContent(msg, "text/html; charset=utf-8");
@@ -91,14 +88,13 @@ public class EmailSender {
     }
 
     public static void main(String[] args) {
-        // Exemple d'utilisation de la classe EmailSender
-        String username = "ayoub.nouri105@gmail.com";
+        String username = "votre email";
         String password = "votreMotDePasse";
-        String host = "smtp.gmail.com"; // ou tout autre serveur SMTP que vous utilisez
-        String port = "587"; // Port SMTP, par exemple, 587 pour TLS
+        String host = "smtp.gmail.com"; 
+        String port = "587";
         
         
-        String recipient = "ayoub.nouri105@gmail.com";
+        String recipient = "votre email";
         String subject = "test sendMailer";
         String messageBody = "hello";
 

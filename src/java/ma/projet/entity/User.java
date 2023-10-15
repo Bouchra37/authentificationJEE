@@ -13,10 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
-/**
- *
- * @author Lachgar
- */
+
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User {

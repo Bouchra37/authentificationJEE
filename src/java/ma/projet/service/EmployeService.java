@@ -14,10 +14,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-/**
- *
- * @author Lachgar
- */
+
 public class EmployeService implements IDao<Employe> {
     
      @Override

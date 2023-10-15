@@ -8,10 +8,7 @@ package ma.projet.entity;
 import java.util.Date;
 import javax.persistence.Entity;
 
-/**
- *
- * @author Lachgar
- */
+
 @Entity
 public class Client extends User {
     private String nom;

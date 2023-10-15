@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Inscription
-    Created on : 10 oct. 2023, 11:54:45
-    Author     : Lachgar
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

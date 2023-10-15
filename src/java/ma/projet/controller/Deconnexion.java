@@ -21,10 +21,6 @@ import ma.projet.entity.Client;
 import ma.projet.service.ClientService;
 import ma.projet.util.Utils;
 
-/**
- *
- * @author Salim
- */
 @WebServlet(name = "deconnexion", urlPatterns = {"/deconnexion"})
 public class Deconnexion extends HttpServlet {
 

@@ -70,7 +70,9 @@
     <label for="email">Entrez votre adresse e-mail :</label>
     <input type="email" name="email" required autofocus>
     <input type="submit" value="Envoyer le code de réinitialisation">
-    <div class="col">
+    <br><br>
+     <p>Retour à la page <a href="auth.jsp">d'authentification</a> ?</p>
+     <div class="col">
         <div class="input-container">
             <h4>${msg}</h4>
         </div>

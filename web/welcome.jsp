@@ -1,9 +1,3 @@
-<%-- 
-    Document   : welcome
-    Created on : 10 oct. 2023, 12:25:31
-    Author     : Lachgar
---%>
-
 <%@page import="ma.projet.entity.Client"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -18,20 +12,21 @@
             text-align: center;
             padding: 20px;
         }
-
-        .container {
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 600px;
-            margin: 0 auto;
-        }
+     .card {
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 50px;
+                border: 4px solid gray;
+                margin-top: 10em;
+                border-radius: 25px;
+                background-color: #f9f9f9;
+                font-size: 20px;
+            }
 
         h1 {
-            color: #007bff;
+            color: #A983E7;
         }
-
+   
         .welcome-message {
             font-size: 24px;
             margin-top: 20px;
@@ -46,12 +41,12 @@
         }
 
         .logout-button:hover {
-            background-color: #0056b3;
+            background-color: #A983E7;
         }
     </style>
 </head>
     <body>
-            <div class="container">
+            <div class="card">
 
         <%! Client c;%>
         <%
@@ -61,10 +56,10 @@
               c = (Client)session.getAttribute("client");
           }
                 %>
-        <h1>
-            Welcome <%= c.getRole()%>: <%= c.getNom() %> !
+        <h3>
+            Welcome <%= c.getRole()%>: <h1><%= c.getNom() %> <%= c.getPrenom() %> ! </h1>
             
-        </h1>
+        </h3>
             <p class="welcome-message">Vous êtes connectés en tenat que <%= c.getRole()%>.</p>
         <form action="deconnexion">
             <input type="submit" class="logout-button" value="Déconnexion">

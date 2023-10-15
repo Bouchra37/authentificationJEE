@@ -14,10 +14,6 @@ import ma.projet.service.EmployeService;
 import ma.projet.util.HibernateUtil;
 import org.hibernate.Hibernate;
 
-/**
- *
- * @author Lachgar
- */
 public class Test {
 
     public static void main(String[] args) {

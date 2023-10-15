@@ -18,7 +18,6 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-// Source : www.exelib.net
 /**
  *
  * Author: G
@@ -78,9 +77,9 @@ public class SendMailTLS {
             message.setFrom(new InternetAddress(username));
             message.setRecipients(
                     Message.RecipientType.TO, InternetAddress.parse(email));
-            message.setSubject("Confirmation code");
+            message.setSubject("Confirmation du code");
 
-            String msg = "Your confirmation code is : " + s;
+            String msg = "Votre code de confirmation est : " + s;
 
             MimeBodyPart mimeBodyPart = new MimeBodyPart();
             mimeBodyPart.setContent(msg, "text/html; charset=utf-8");
@@ -94,6 +93,7 @@ public class SendMailTLS {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        
 //        Properties props = new Properties();
 //        props.put("mail.smtp.host", "smtp.gmail.com");
 //        props.put("mail.smtp.socketFactory.port", "587");
@@ -123,5 +123,5 @@ public class SendMailTLS {
 //        } catch (MessagingException e) {
 //            throw new RuntimeException(e);
 //        }
-    }
+   }
 }

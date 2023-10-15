@@ -80,11 +80,13 @@
                 background-color: gray;
             }
 
-            h3 {
+        h4 {
                 color: red;
                 text-align: center;
-                margin-top: 10px;
-            }       
+                margin-top: 15px;
+                margin-left: 140px;
+                margin-bottom: auto;
+            }     
         </style>
     </head>
     <body>
@@ -107,15 +109,11 @@
                         <input type="password" id ="confirmPassword" name="confirmPassword" required>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="input-container">
+                <div class="col-12">
                         <input type="submit" value="Réinitialiser le mot de passe">
-                    </div>
                 </div>
                     <div class="col">
-                        <div class="input-container">
                             <h4>${msg}</h4>
-                        </div>
                     </div>
             </form>
         </div>

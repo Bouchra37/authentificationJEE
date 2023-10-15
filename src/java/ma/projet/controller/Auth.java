@@ -21,15 +21,6 @@ import ma.projet.util.Utils;
 @WebServlet(name = "Auth", urlPatterns = {"/auth"})
 public class Auth extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String email = request.getParameter("email");
@@ -41,7 +32,6 @@ public class Auth extends HttpServlet {
             request.getRequestDispatcher("auth.jsp").forward(request, response);
         }
         else{
-            //System.out.println(clt);
             if(clt.getPassword().equals(Utils.MD5(password))){
                 HttpSession session = request.getSession();
                 session.setAttribute("client", clt);

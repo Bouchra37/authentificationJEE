@@ -13,11 +13,6 @@ import ma.projet.util.Utils;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
-/**
- *
- * @author Lachgar
- */
 public class ClientService implements IDao<Client> {
     
      @Override
