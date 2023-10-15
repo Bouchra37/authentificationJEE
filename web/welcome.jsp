@@ -42,6 +42,7 @@
 
         .logout-button:hover {
             background-color: #A983E7;
+            
         }
     </style>
 </head>
